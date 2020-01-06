@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="template1">
+<head>
+<meta charset="utf-8" />
+<title>Banque</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" type="text/css"
+	th:href="@{/css/bootstrap.min.css}" />
+<script th:src="@{/js/jquery.min.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+</head>
+<body>
+	<div layout:fragment="content">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card border-primary">
+					<div class="card-header  text-white bg-primary mb-3">Problème d'autorisation</div>
+					<div class="card-body">
+					<div class="text-danger">
+					  Vous n'avez pas le droit d'accèder à cette ressource
+					</div>
+					</div>
+				</div>
+
+			</div>
+			
+		</div>
+
+	</div>
+
+</body>
+</html>
